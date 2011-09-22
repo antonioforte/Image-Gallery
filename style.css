@@ -1,0 +1,233 @@
+﻿
+body {
+    font:12px verdana,helvetica,arial,sans-serif;
+    height:100%;
+    width:100%;
+    color:#868686;
+    background:#222 url("res/back.jpg") repeat top center;
+    background-attachment:fixed;
+    margin:0;
+    padding:0;
+    overflow: auto;
+}
+
+a:link {text-decoration:none;color:#868686;}
+a:visited {text-decoration:none;color:#868686;}
+a:hover{text-decoration:none;color:#1B5676;}
+a:active {text-decoration:none;color:#868686;}
+
+::-webkit-scrollbar {width: 10px;height: 10px;}
+::-webkit-scrollbar:vertical {background-color:#000;}
+::-webkit-scrollbar-thumb:vertical {background-image:-webkit-gradient(linear, left top, right top, from(#061d35), to(#132d47));}
+::-webkit-scrollbar-thumb:vertical:hover {background-image:-webkit-gradient(linear, left top, right top, from(#1f5c9b), to(#07213c));}
+::-webkit-scrollbar:horizontal {background-color:#000;}
+::-webkit-scrollbar-thumb:horizontal {background-image:-webkit-gradient(linear, left top, left bottom, from(#061d35), to(#132d47));}
+::-webkit-scrollbar-thumb:horizontal:hover {background-image:-webkit-gradient(linear, left top, left bottom, from(#1f5c9b), to(#07213c));}
+
+.hidden{display:none;}
+
+
+#goback{
+    margin:0;
+    position:fixed;
+    padding:10px;
+    z-index:1000;
+    top:0;
+    height:17px;
+    width:100%;
+    background:#0a0a0a;
+    border-bottom:1px solid #000000;
+}
+#goback a{
+    padding:10px; 
+    background:#000;
+    border:1px solid #000;
+    -webkit-transition:all 0.1s ease-in-out;
+    -moz-transition:all 0.1s ease-in-out;
+}
+#goback a:hover{
+	background:#222;
+    border:1px solid #1B5676;
+}
+#goback span{
+    padding:10px; 
+    background:#000;
+    border:1px solid #000;
+    -webkit-transition:all 0.1s ease-in-out;
+    -moz-transition:all 0.1s ease-in-out;
+}
+#goback span:hover{
+	background:#222;
+	cursor: pointer;
+	background:#222;
+    border:1px solid #1B5676;
+    color:#1B5676;
+}
+.floatRight{
+	float:right;
+	margin:-10px 10px 0 0;
+}
+
+#docDiv{
+    position:absolute;
+    top:80px;
+    left:50px; 
+    color:#1B5676;
+    padding:10px;
+    z-index:-4444442;
+    background:#000;
+    font-weight: bold;
+    border:1px solid #000000;
+}
+
+
+
+
+.wrapper{
+    max-width:968px;
+    margin:150px auto 50px auto;
+}
+/*clear float*/
+.wrapper:after {
+    content: ".";
+    display: block;
+    height:0;
+    clear: both;
+    visibility: hidden;
+}
+.wrapper div{
+    float:left;
+    width:200px;
+    margin:20px;
+    text-align:center;
+    background: #000;
+    border:1px solid #000;
+}
+.wrapper div:hover{
+    border:1px solid #1B5676;
+    background:#000;
+    cursor:pointer;
+}
+.wrapper div img{
+	padding: 0;
+	margin: 0;
+	border-top: none;
+	display: block;
+	opacity:.7;
+}
+.wrapper div img:hover{opacity:1;}
+.wrapper div span{
+    padding:5px;
+    display:block;
+    color:#484848;
+	background: #000;
+}
+
+
+/*editWrapper*/
+#editWrapper{
+    max-width:880px;
+    margin:150px auto 50px auto;
+}
+#editWrapper div{
+    width:100px;
+    background:#000;
+    margin: 10px;
+    padding: 10px;
+}
+#editWrapper div:hover{
+    background:#333;
+    cursor: pointer;
+}
+#results{
+    margin:10px;
+    padding:15px ;
+    width:200px;
+    background:#000;
+    display: none;
+}
+
+
+/* controler */
+#controler{
+	position:fixed;
+	padding:5px;
+	bottom:5px;
+	right:5px;
+	width:400px;
+	background:#000;  
+	opacity:.0;
+    -webkit-transition:all 0.3s ease-in-out;
+}
+#controler:hover{opacity:.8;}
+#controler button{
+	background:#777;  
+	border:1px solid #000;
+}
+#controler button:hover{
+	background:#0a0a0a;  
+	color:#1B5676;
+	border:1px solid #1B5676;
+	cursor: pointer;
+}
+#bigpicdiv{
+	margin:50px auto;
+	text-align: center;
+}
+#bigpicdiv img{border:1px solid #000;}
+
+
+
+/* pageLoading */
+#pageLoading{
+    max-width:880px;
+    margin:200px auto 50px auto;
+	font-size: 30px;
+}
+
+#pageLoading div{
+	color:#1B5676;
+	padding:10px;
+	text-align: center;
+}
+#pageLoading div span{
+	padding:10px;
+	border:1px solid #1B5676;
+	background:#0a0a0a;  
+	display:block;
+}
+
+
+
+/* aboutWrapper */
+#aboutWrapper{
+    max-width:880px;
+    margin:200px auto 50px auto;
+	padding:10px;
+	border:1px solid #1B5676;
+	background:#0a0a0a;  
+}
+
+/*******************************************************/
+/* nav */
+div#buttonsdiv{
+    text-align:right;
+    position:fixed;
+    right:0;
+    top:38px;
+    z-index:1000;
+}
+div#buttonsdiv button{
+    background:#0a0a0a;
+    color:#5b5b5b;
+    padding:10px;
+    border:none;
+    margin:0 1px 0 0;
+    -webkit-transition:all 0.3s ease-in-out;
+}
+div#buttonsdiv button:hover{
+    cursor:pointer;
+    background:#1B5676;
+    color:#000;
+}
+/*end*/

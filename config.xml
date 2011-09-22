@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<thumbs>200,100</thumbs>
+	<avoid>Gallery_Gatas_Brasil,Gallery_Gatas_Inter,Gallery_Gatas_Portugal,Gallery_Gatas_Special,</avoid>
+    <location>/media/vault_small/Gallery</location>
+    <exts>.jpg,.jpeg,.JPG,.png,.gif,.bmp,.svg,.PNG,.tif</exts>
+</settings> 
